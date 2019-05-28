@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "geolib": "^3.0.2",
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
     "@types/jest": "^24.0.13",
