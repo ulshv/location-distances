@@ -63,8 +63,8 @@ export const _formatFinalResult = (
     const to   = pairWithDistance.pair.find(location => location !== locations[index]);
 
     return ({
-      from,
-      to,
+      location: from.name,
+      nearestLocation: to.name,
       distance: (pairWithDistance.distance / 1000).toFixed(2) + ' km',
     })
   })

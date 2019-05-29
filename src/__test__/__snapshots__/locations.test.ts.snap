@@ -33,63 +33,23 @@ exports[`locations.ts _formatFinalResult() should propertly format results 1`] =
 Array [
   Object {
     "distance": "635.70 km",
-    "from": Object {
-      "latitude": 55.75583,
-      "longitude": 37.61778,
-      "name": "Moscow",
-      "query": "moscow",
-    },
-    "to": Object {
-      "latitude": 59.95,
-      "longitude": 30.31667,
-      "name": "Saint Petersburg",
-      "query": "saint petersburg",
-    },
+    "location": "Moscow",
+    "nearestLocation": "Saint Petersburg",
   },
   Object {
     "distance": "128.73 km",
-    "from": Object {
-      "latitude": 40.7648,
-      "longitude": -73.9808,
-      "name": "New York",
-      "query": "new york",
-    },
-    "to": Object {
-      "latitude": 40.0115,
-      "longitude": -75.1327,
-      "name": "Philadelphia",
-      "query": "philadelphia",
-    },
+    "location": "New York",
+    "nearestLocation": "Philadelphia",
   },
   Object {
     "distance": "128.73 km",
-    "from": Object {
-      "latitude": 40.0115,
-      "longitude": -75.1327,
-      "name": "Philadelphia",
-      "query": "philadelphia",
-    },
-    "to": Object {
-      "latitude": 40.7648,
-      "longitude": -73.9808,
-      "name": "New York",
-      "query": "new york",
-    },
+    "location": "Philadelphia",
+    "nearestLocation": "New York",
   },
   Object {
     "distance": "635.70 km",
-    "from": Object {
-      "latitude": 59.95,
-      "longitude": 30.31667,
-      "name": "Saint Petersburg",
-      "query": "saint petersburg",
-    },
-    "to": Object {
-      "latitude": 55.75583,
-      "longitude": 37.61778,
-      "name": "Moscow",
-      "query": "moscow",
-    },
+    "location": "Saint Petersburg",
+    "nearestLocation": "Moscow",
   },
 ]
 `;
@@ -288,63 +248,23 @@ exports[`locations.ts calculateResponse() should propertly transform raw locatio
 Array [
   Object {
     "distance": "635.70 km",
-    "from": Object {
-      "latitude": 55.75583,
-      "longitude": 37.61778,
-      "name": "Moscow",
-      "query": "moscow",
-    },
-    "to": Object {
-      "latitude": 59.95,
-      "longitude": 30.31667,
-      "name": "Saint Petersburg",
-      "query": "saint petersburg",
-    },
+    "location": "Moscow",
+    "nearestLocation": "Saint Petersburg",
   },
   Object {
     "distance": "128.73 km",
-    "from": Object {
-      "latitude": 40.7648,
-      "longitude": -73.9808,
-      "name": "New York",
-      "query": "new york",
-    },
-    "to": Object {
-      "latitude": 40.0115,
-      "longitude": -75.1327,
-      "name": "Philadelphia",
-      "query": "philadelphia",
-    },
+    "location": "New York",
+    "nearestLocation": "Philadelphia",
   },
   Object {
     "distance": "128.73 km",
-    "from": Object {
-      "latitude": 40.0115,
-      "longitude": -75.1327,
-      "name": "Philadelphia",
-      "query": "philadelphia",
-    },
-    "to": Object {
-      "latitude": 40.7648,
-      "longitude": -73.9808,
-      "name": "New York",
-      "query": "new york",
-    },
+    "location": "Philadelphia",
+    "nearestLocation": "New York",
   },
   Object {
     "distance": "635.70 km",
-    "from": Object {
-      "latitude": 59.95,
-      "longitude": 30.31667,
-      "name": "Saint Petersburg",
-      "query": "saint petersburg",
-    },
-    "to": Object {
-      "latitude": 55.75583,
-      "longitude": 37.61778,
-      "name": "Moscow",
-      "query": "moscow",
-    },
+    "location": "Saint Petersburg",
+    "nearestLocation": "Moscow",
   },
 ]
 `;
