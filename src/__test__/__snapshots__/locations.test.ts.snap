@@ -3,16 +3,16 @@
 exports[`locations.ts _fetchLocations() should fetch data with mock api 1`] = `
 Array [
   Object {
-    "latitude": 55.75583,
-    "longitude": 37.61778,
-    "name": "Moscow",
-    "query": "moscow",
-  },
-  Object {
     "latitude": 40.7648,
     "longitude": -73.9808,
     "name": "New York",
     "query": "new york",
+  },
+  Object {
+    "latitude": 55.75583,
+    "longitude": 37.61778,
+    "name": "Moscow",
+    "query": "moscow",
   },
   Object {
     "latitude": 40.0115,
@@ -32,14 +32,14 @@ Array [
 exports[`locations.ts _formatFinalResult() should propertly format results 1`] = `
 Array [
   Object {
-    "distance": "635.70 km",
-    "location": "Moscow",
-    "nearestLocation": "Saint Petersburg",
-  },
-  Object {
     "distance": "128.73 km",
     "location": "New York",
     "nearestLocation": "Philadelphia",
+  },
+  Object {
+    "distance": "635.70 km",
+    "location": "Moscow",
+    "nearestLocation": "Saint Petersburg",
   },
   Object {
     "distance": "128.73 km",
@@ -57,23 +57,6 @@ Array [
 exports[`locations.ts _getClosestLocationPairsWithDistances() should find closest pair for each location 1`] = `
 Array [
   Object {
-    "distance": 635700,
-    "pair": Array [
-      Object {
-        "latitude": 55.75583,
-        "longitude": 37.61778,
-        "name": "Moscow",
-        "query": "moscow",
-      },
-      Object {
-        "latitude": 59.95,
-        "longitude": 30.31667,
-        "name": "Saint Petersburg",
-        "query": "saint petersburg",
-      },
-    ],
-  },
-  Object {
     "distance": 128727,
     "pair": Array [
       Object {
@@ -87,6 +70,23 @@ Array [
         "longitude": -75.1327,
         "name": "Philadelphia",
         "query": "philadelphia",
+      },
+    ],
+  },
+  Object {
+    "distance": 635700,
+    "pair": Array [
+      Object {
+        "latitude": 55.75583,
+        "longitude": 37.61778,
+        "name": "Moscow",
+        "query": "moscow",
+      },
+      Object {
+        "latitude": 59.95,
+        "longitude": 30.31667,
+        "name": "Saint Petersburg",
+        "query": "saint petersburg",
       },
     ],
   },
@@ -133,50 +133,16 @@ Array [
     "distance": 7512724,
     "pair": Array [
       Object {
-        "latitude": 55.75583,
-        "longitude": 37.61778,
-        "name": "Moscow",
-        "query": "moscow",
-      },
-      Object {
         "latitude": 40.7648,
         "longitude": -73.9808,
         "name": "New York",
         "query": "new york",
       },
-    ],
-  },
-  Object {
-    "distance": 7636967,
-    "pair": Array [
       Object {
         "latitude": 55.75583,
         "longitude": 37.61778,
         "name": "Moscow",
         "query": "moscow",
-      },
-      Object {
-        "latitude": 40.0115,
-        "longitude": -75.1327,
-        "name": "Philadelphia",
-        "query": "philadelphia",
-      },
-    ],
-  },
-  Object {
-    "distance": 635700,
-    "pair": Array [
-      Object {
-        "latitude": 55.75583,
-        "longitude": 37.61778,
-        "name": "Moscow",
-        "query": "moscow",
-      },
-      Object {
-        "latitude": 59.95,
-        "longitude": 30.31667,
-        "name": "Saint Petersburg",
-        "query": "saint petersburg",
       },
     ],
   },
@@ -215,6 +181,40 @@ Array [
     ],
   },
   Object {
+    "distance": 7636967,
+    "pair": Array [
+      Object {
+        "latitude": 55.75583,
+        "longitude": 37.61778,
+        "name": "Moscow",
+        "query": "moscow",
+      },
+      Object {
+        "latitude": 40.0115,
+        "longitude": -75.1327,
+        "name": "Philadelphia",
+        "query": "philadelphia",
+      },
+    ],
+  },
+  Object {
+    "distance": 635700,
+    "pair": Array [
+      Object {
+        "latitude": 55.75583,
+        "longitude": 37.61778,
+        "name": "Moscow",
+        "query": "moscow",
+      },
+      Object {
+        "latitude": 59.95,
+        "longitude": 30.31667,
+        "name": "Saint Petersburg",
+        "query": "saint petersburg",
+      },
+    ],
+  },
+  Object {
     "distance": 7010527,
     "pair": Array [
       Object {
@@ -236,25 +236,25 @@ Array [
 
 exports[`locations.ts _parseRawLocationQueries() should propertly parse raw data 1`] = `
 Array [
-  "moscow",
   "new york",
-  "nowhere",
+  "moscow",
   "philadelphia",
   "saint petersburg",
+  "nowhere",
 ]
 `;
 
 exports[`locations.ts calculateResponse() should propertly transform raw locations queries to final result 1`] = `
 Array [
   Object {
-    "distance": "635.70 km",
-    "location": "Moscow",
-    "nearestLocation": "Saint Petersburg",
-  },
-  Object {
     "distance": "128.73 km",
     "location": "New York",
     "nearestLocation": "Philadelphia",
+  },
+  Object {
+    "distance": "635.70 km",
+    "location": "Moscow",
+    "nearestLocation": "Saint Petersburg",
   },
   Object {
     "distance": "128.73 km",

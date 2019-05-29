@@ -1,7 +1,7 @@
 import uniq from 'lodash/uniq';
 
-export const getLowercasedSortedList = (items: string[]) => {
-  return items.map(l => l.toLowerCase().trim()).sort()
+export const getLowercasedList = (items: string[]) => {
+  return items.map(l => l.toLowerCase().trim())
 };
 
 export const getListWithUniqueItems = (items: string[]) => {

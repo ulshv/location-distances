@@ -1,14 +1,14 @@
 import {
-  getLowercasedSortedList,
+  getLowercasedList,
   getListWithUniqueItems,
   createPairsFromList
 } from "../utils";
 
 describe('utils.ts', () => {
-  it('getLowercasedSortedList() should return sorted, lowercased and trimmed array of strings', () => {
+  it('getLowercasedList() should return lowercased and trimmed array of strings', () => {
     const data = ['New York', 'San Francisco, CA', ' Moscow '];
-    const result = ['moscow', 'new york', 'san francisco, ca'];
-    expect(getLowercasedSortedList(data)).toEqual(result);
+    const result = ['new york', 'san francisco, ca', 'moscow'];
+    expect(getLowercasedList(data)).toEqual(result);
   });
 
   it('getListWithUniqueItems() should return array of unique strings', () => {

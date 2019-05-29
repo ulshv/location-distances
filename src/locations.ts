@@ -1,11 +1,11 @@
 import getDistance from "geolib/es/getDistance";
 
 import { ILocation, ILocationPair, ILocationPairWithDistance, IMapApi } from "./typings";
-import { getListWithUniqueItems, getLowercasedSortedList, createPairsFromList } from "./utils";
+import { getListWithUniqueItems, getLowercasedList, createPairsFromList } from "./utils";
 
 
 export const _parseRawLocationQueries = (locationQueriesRaw: string[]) => {
-  return getListWithUniqueItems(getLowercasedSortedList(locationQueriesRaw));
+  return getListWithUniqueItems(getLowercasedList(locationQueriesRaw));
 }
 
 
