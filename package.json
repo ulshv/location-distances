@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch"
+    "test": "jest --maxWorkers=1",
+    "test:watch": "jest --maxWorkers=1 --watch"
   },
   "author": "",
   "license": "ISC",

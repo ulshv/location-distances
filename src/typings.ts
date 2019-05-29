@@ -11,3 +11,7 @@ export type ILocationPairWithDistance = {
   pair: ILocationPair,
   distance: number,
 }
+
+export interface IMapApi {
+  fetchLocation: (locationQuery: string) => Promise<ILocation | null>
+}

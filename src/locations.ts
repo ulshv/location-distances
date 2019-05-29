@@ -1,7 +1,6 @@
 import getDistance from "geolib/es/getDistance";
 
-import { ILocation, ILocationPair, ILocationPairWithDistance } from "./typings";
-import { getLocationDetailsMock } from "./map-api";
+import { ILocation, ILocationPair, ILocationPairWithDistance, IMapApi } from "./typings";
 import { getListWithUniqueItems, getLowercasedSortedList, createPairsFromList } from "./utils";
 
 
@@ -10,11 +9,11 @@ export const _parseRawLocationQueries = (locationQueriesRaw: string[]) => {
 }
 
 
-export const _fetchLocations = async (locationQueries: string[]) => {
+export const _fetchLocations = async (mapApi: IMapApi, locationQueries: string[]) => {
   const locations: ILocation[] = [];
 
   for (let locationQuery of locationQueries) {
-    const location = await getLocationDetailsMock(locationQuery);
+    const location = await mapApi.fetchLocation(locationQuery);
     if (location) locations.push(location);
   }
 
@@ -72,9 +71,9 @@ export const _formatFinalResult = (
 );
 
 
-export const calculateResponse = async (locationsQueriesRaw: string[]) => {
+export const calculateResponse = async (mapApi: IMapApi, locationsQueriesRaw: string[]) => {
   const locationQueries = _parseRawLocationQueries(locationsQueriesRaw);
-  const locations = await _fetchLocations(locationQueries);
+  const locations = await _fetchLocations(mapApi, locationQueries);
   const locationPairs = createPairsFromList(locations);
   const locationPairsWithDistances = _getLocationPairsWithDistances(locationPairs);
   const closestLocationPairsWithDistances = _getClosestLocationPairsWithDistances(
