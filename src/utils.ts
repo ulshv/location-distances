@@ -13,7 +13,7 @@ export const parseRequestData = (locations: string[]) => {
 }
 
 export const createPairsFromList = <T>(items: T[]) => {
-  const result = [];
+  const result: Array<[T, T]> = [];
 
   for (let i = 0; i < items.length - 1; i++) {
     for (let j = 1 + i; j < items.length; j++) {

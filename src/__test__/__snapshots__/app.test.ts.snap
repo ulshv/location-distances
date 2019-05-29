@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app.ts  1`] = `
+Array [
+  Object {
+    "distance": "7512.72 km",
+    "from": "Moscow",
+    "to": "New York",
+  },
+  Object {
+    "distance": "7636.97 km",
+    "from": "Moscow",
+    "to": "Philadelphia",
+  },
+  Object {
+    "distance": "635.70 km",
+    "from": "Moscow",
+    "to": "Saint Petersburg",
+  },
+  Object {
+    "distance": "128.73 km",
+    "from": "New York",
+    "to": "Philadelphia",
+  },
+  Object {
+    "distance": "6886.95 km",
+    "from": "New York",
+    "to": "Saint Petersburg",
+  },
+  Object {
+    "distance": "7010.53 km",
+    "from": "Philadelphia",
+    "to": "Saint Petersburg",
+  },
+]
+`;
+
+exports[`app.ts Should correctly get location pairs and calculate distance 1`] = `
+Array [
+  Object {
+    "distance": "7512.72 km",
+    "from": "Moscow",
+    "to": "New York",
+  },
+  Object {
+    "distance": "7636.97 km",
+    "from": "Moscow",
+    "to": "Philadelphia",
+  },
+  Object {
+    "distance": "635.70 km",
+    "from": "Moscow",
+    "to": "Saint Petersburg",
+  },
+  Object {
+    "distance": "128.73 km",
+    "from": "New York",
+    "to": "Philadelphia",
+  },
+  Object {
+    "distance": "6886.95 km",
+    "from": "New York",
+    "to": "Saint Petersburg",
+  },
+  Object {
+    "distance": "7010.53 km",
+    "from": "Philadelphia",
+    "to": "Saint Petersburg",
+  },
+]
+`;
+
+exports[`app.ts Should correctly get location pairs and calculate distances 1`] = `
+Array [
+  Object {
+    "distance": "7512.72 km",
+    "from": "Moscow",
+    "to": "New York",
+  },
+  Object {
+    "distance": "7636.97 km",
+    "from": "Moscow",
+    "to": "Philadelphia",
+  },
+  Object {
+    "distance": "635.70 km",
+    "from": "Moscow",
+    "to": "Saint Petersburg",
+  },
+  Object {
+    "distance": "128.73 km",
+    "from": "New York",
+    "to": "Philadelphia",
+  },
+  Object {
+    "distance": "6886.95 km",
+    "from": "New York",
+    "to": "Saint Petersburg",
+  },
+  Object {
+    "distance": "7010.53 km",
+    "from": "Philadelphia",
+    "to": "Saint Petersburg",
+  },
+]
+`;
