@@ -8,10 +8,6 @@ export const getListWithUniqueItems = (items: string[]) => {
   return uniq(items);
 }
 
-export const parseRequestData = (locations: string[]) => {
-  return getListWithUniqueItems(getLowercasedSortedList(locations));
-}
-
 export const createPairsFromList = <T>(items: T[]) => {
   const result: Array<[T, T]> = [];
 
