@@ -1,106 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`app.ts  1`] = `
-Array [
-  Object {
-    "distance": "7512.72 km",
-    "from": "Moscow",
-    "to": "New York",
-  },
-  Object {
-    "distance": "7636.97 km",
-    "from": "Moscow",
-    "to": "Philadelphia",
-  },
-  Object {
-    "distance": "635.70 km",
-    "from": "Moscow",
-    "to": "Saint Petersburg",
-  },
-  Object {
-    "distance": "128.73 km",
-    "from": "New York",
-    "to": "Philadelphia",
-  },
-  Object {
-    "distance": "6886.95 km",
-    "from": "New York",
-    "to": "Saint Petersburg",
-  },
-  Object {
-    "distance": "7010.53 km",
-    "from": "Philadelphia",
-    "to": "Saint Petersburg",
-  },
-]
-`;
-
-exports[`app.ts Should correctly get location pairs and calculate distance 1`] = `
-Array [
-  Object {
-    "distance": "7512.72 km",
-    "from": "Moscow",
-    "to": "New York",
-  },
-  Object {
-    "distance": "7636.97 km",
-    "from": "Moscow",
-    "to": "Philadelphia",
-  },
-  Object {
-    "distance": "635.70 km",
-    "from": "Moscow",
-    "to": "Saint Petersburg",
-  },
-  Object {
-    "distance": "128.73 km",
-    "from": "New York",
-    "to": "Philadelphia",
-  },
-  Object {
-    "distance": "6886.95 km",
-    "from": "New York",
-    "to": "Saint Petersburg",
-  },
-  Object {
-    "distance": "7010.53 km",
-    "from": "Philadelphia",
-    "to": "Saint Petersburg",
-  },
-]
-`;
-
 exports[`app.ts Should correctly get location pairs and calculate distances 1`] = `
 Array [
   Object {
-    "distance": "7512.72 km",
-    "from": "Moscow",
-    "to": "New York",
-  },
-  Object {
-    "distance": "7636.97 km",
-    "from": "Moscow",
-    "to": "Philadelphia",
-  },
-  Object {
     "distance": "635.70 km",
-    "from": "Moscow",
-    "to": "Saint Petersburg",
+    "from": Object {
+      "latitude": 55.75583,
+      "longitude": 37.61778,
+      "name": "Moscow",
+      "query": "moscow",
+    },
+    "to": Object {
+      "latitude": 59.95,
+      "longitude": 30.31667,
+      "name": "Saint Petersburg",
+      "query": "saint petersburg",
+    },
   },
   Object {
     "distance": "128.73 km",
-    "from": "New York",
-    "to": "Philadelphia",
+    "from": Object {
+      "latitude": 40.7648,
+      "longitude": -73.9808,
+      "name": "New York",
+      "query": "new york",
+    },
+    "to": Object {
+      "latitude": 40.0115,
+      "longitude": -75.1327,
+      "name": "Philadelphia",
+      "query": "philadelphia",
+    },
   },
   Object {
-    "distance": "6886.95 km",
-    "from": "New York",
-    "to": "Saint Petersburg",
+    "distance": "128.73 km",
+    "from": Object {
+      "latitude": 40.0115,
+      "longitude": -75.1327,
+      "name": "Philadelphia",
+      "query": "philadelphia",
+    },
+    "to": Object {
+      "latitude": 40.7648,
+      "longitude": -73.9808,
+      "name": "New York",
+      "query": "new york",
+    },
   },
   Object {
-    "distance": "7010.53 km",
-    "from": "Philadelphia",
-    "to": "Saint Petersburg",
+    "distance": "635.70 km",
+    "from": Object {
+      "latitude": 59.95,
+      "longitude": 30.31667,
+      "name": "Saint Petersburg",
+      "query": "saint petersburg",
+    },
+    "to": Object {
+      "latitude": 55.75583,
+      "longitude": 37.61778,
+      "name": "Moscow",
+      "query": "moscow",
+    },
   },
 ]
 `;

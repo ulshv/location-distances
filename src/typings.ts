@@ -4,3 +4,8 @@ export type ILocation = {
   name      : string, // "New York, NY"
   query     : string, // "new york, ny"
 };
+
+export type ILocationPairWithDistance = {
+  pair: [ILocation, ILocation],
+  distance: number,
+}
